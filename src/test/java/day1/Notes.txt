@@ -1,0 +1,53 @@
+Rest Assured
+-------------
+It is an open-source Java library and is free to use.
+It is used for validating and testing Java APIs.
+Supports all HTTP methods like GET, POST, PUT, DELETE etc.
+
+We can integrate Rest Assured with all major automation frameworks 
+like TestNG, JUnit as well as integrate it with maven and CI/CD.
+
+Pre-requisites
+------------
+1) Eclipse IDE/Java 11+
+2) TestNG
+3) Rest assured dependencies (https://github.com/rest-assured/rest-assured/wiki/GettingStarted#rest-assured)
+
+API Testing Flow:
+-----------------
+1. Given (Preconditions)
+   - Set Base URI
+   - Configure Content Type
+   - Add Headers
+   - Add Query/Path Parameters
+   - Set Cookies
+   - Configure Authentication
+   - Prepare Request Body (Payloads)
+
+2. When (Action)
+   - Send HTTP Requests:
+     GET, POST, PUT, PATCH, DELETE, etc.
+
+3. Then (Validation)
+   - Verify Status Code
+   - Validate Response Body
+   - Extract Response Data
+   - Verify Headers
+   - Verify Cookies
+   - Check Response Time
+   - Validate Content Type
+
+Common API Validations:
+- Status Code Validation
+- Response Body Validation
+- Response Header Validation
+- Response Time Validation
+- Content-Type Validation
+- Response String/Text Validation
+- Cookie Validation
+- JSON/XML Schema Validation
+
+Static Imports
+----------------
+import static io.restassured.RestAssured.*;
+import static org.hamcrest.Matchers.*;
