@@ -1,0 +1,70 @@
+REST Assured – Path Parameters and Query Parameters
+===================================================
+1. Path Parameters
+------------------
+Path parameters are part of the URL path and are used to identify a specific resource.
+
+Example URL
+https://fakestoreapi.com/products/5
+Here, 5 is the path parameter.
+
+@Test
+public void pathParameter() {
+    given()
+        .pathParam("id", "5")
+    .when()
+        .get("https://fakestoreapi.com/products/{id}")
+    .then()
+        .statusCode(200)
+        .log().body();
+}
+
+Explanation
+pathParam("id", "5") assigns the value 5 to the placeholder {id}.
+During execution, the URL becomes:
+https://fakestoreapi.com/products/5
+---
+
+2. Query Parameters
+--------------------
+Query parameters are appended to the URL after a "?" and are used for filtering, sorting, pagination, etc.
+
+Example URL
+https://reqres.in/api/users?page=2&id=5
+Here,
+page=2
+id=5
+are query parameters.
+
+
+@Test
+public void queryParameters() {
+    given()
+        .queryParam("page", 2)
+        .queryParam("id", 5)
+        .header("x-api-key", "free_user_3EnQMnZdflCgDVuez6c2BNTjIRw")
+    .when()
+        .get("https://reqres.in/api/users")
+    .then()
+        .statusCode(200)
+        .log().body();
+}
+Explanation
+
+queryParam("page", 2) adds ?page=2.
+queryParam("id", 5) adds &id=5.
+The final URL becomes:
+https://reqres.in/api/users?page=2&id=5
+
+
+---
+Difference Between Path Parameters and Query Parameters
+
+| Feature             | Path Parameter                 | Query Parameter                  |
+| ------------------- | ------------------------------ | -------------------------------- |
+| Position            | Inside the URL path            | After ? in the URL               |
+| Purpose             | Identifies a specific resource | Filters or modifies the response |
+| Example             | /products/5                    | ?page=2&id=5                     |
+| REST Assured Method | pathParam()                    | queryParam()                     |
+
+

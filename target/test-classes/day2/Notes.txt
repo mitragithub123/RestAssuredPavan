@@ -1,0 +1,104 @@
+POST Request in REST Assured
+==============================
+A POST request consists of:
+
+Request Payload/Body (JSON format)
+POST URL
+Response
+
+Different Ways to Create Request Payload (POST Request Body)
+----------------------
+1. Using HashMap
+
+Faker faker = new Faker();
+
+HashMap<String, String> requestBody = new HashMap<>();
+requestBody.put("name", faker.name().fullName());
+requestBody.put("job", faker.job().title());
+
+Pass the request body in:
+.body(requestBody)
+--
+2. Using `org.json` Library
+
+Add Dependency in `pom.xml`
+<!-- JSON Object Creation and Manipulation -->
+<dependency>
+    <groupId>org.json</groupId>
+    <artifactId>json</artifactId>
+    <version>20250517</version>
+    <scope>compile</scope>
+</dependency>
+
+
+Create JSON Object
+
+JSONObject requestBody = new JSONObject();
+requestBody.put("name", "Scott");
+requestBody.put("location", "France");
+requestBody.put("phone", "82455566");
+
+Pass the request body in:
+.body(requestBody.toString())
+---
+3. Using Java POJO Class (Plain Old Java Object)
+
+Create a POJO Class (Example: `StudentPojo`)
+private String name;
+private String[] courses;
+
+public String getName() {
+    return name;
+}
+
+public void setName(String name) {
+    this.name = name;
+}
+
+public String[] getCourses() {
+    return courses;
+}
+
+public void setCourses(String[] courses) {
+    this.courses = courses;
+}
+
+Create and Populate Object
+
+StudentPojo requestBody = new StudentPojo();
+requestBody.setName("Scott");
+String[] courses1 = {"C", "C++"};
+requestBody.setCourses(courses1);
+
+Pass the request body in:
+.body(requestBody)
+
+
+Validate the response:
+.body("name", equalTo(requestBody.getName()))
+.body("courses[0]", equalTo(requestBody.getCourses()[0]))
+.body("courses[1]", equalTo(requestBody.getCourses()[1]))
+---
+
+4. Using an External JSON File
+
+Create a JSON file (e.g., students.json):
+{
+  "name": "Scott",
+  "location": "France",
+  "phone": "82455566",
+  "courses": [
+    "C",
+    "C++"
+  ]
+}
+
+File file=new File("./src/test/java/day2/Body.json"); //Capture file path
+FileReader fileReader=new FileReader(file); //Open the file in reading mode
+JSONTokener jsonTokener=new JSONTokener(fileReader); //Open the file using JSONTokener form
+JSONObject requestBody=new JSONObject(jsonTokener);// Convert token into JSONObject
+
+Pass the request body in:
+.body(requestBody.toString())
+
+

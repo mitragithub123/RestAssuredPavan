@@ -50,7 +50,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
-                    <span>C:\Users\hp\AppData\Local\Temp\testng-eclipse-999335588\testng-customsuite.xml</span>
+                    <span>C:\Users\hp\AppData\Local\Temp\testng-eclipse--1604631114\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -92,7 +92,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">3 methods,   3 passed</span>
+                    <span class="method-stats">1 method,   1 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -103,17 +103,7 @@
                     <div class="method-list-content passed suite-Default_suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="day1.HTTPMethods" class="method navigator-link" hash-for-method="createUser1">createUser1</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="day1.HTTPMethods" class="method navigator-link" hash-for-method="deleteUser">deleteUser</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="day1.HTTPMethods" class="method navigator-link" hash-for-method="updateUser">updateUser</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="day2.Parameters" class="method navigator-link" hash-for-method="queryParameters">queryParameters</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Default_suite -->
@@ -131,28 +121,14 @@
           <div class="suite-Default_suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">day1.HTTPMethods</span>
+              <span class="class-name">day2.Parameters</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="createUser1">
-                  </a> <!-- createUser1 -->
-                  <span class="method-name">createUser1</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="deleteUser">
-                  </a> <!-- deleteUser -->
-                  <span class="method-name">deleteUser</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="updateUser">
-                  </a> <!-- updateUser -->
-                  <span class="method-name">updateUser</span>
+                  <a name="queryParameters">
+                  </a> <!-- queryParameters -->
+                  <span class="method-name">queryParameters</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -160,7 +136,7 @@
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\hp\AppData\Local\Temp\testng-eclipse-999335588\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\hp\AppData\Local\Temp\testng-eclipse--1604631114\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -169,13 +145,11 @@
 &lt;suite name=&quot;Default suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Default test&quot; verbose=&quot;2&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;day1.HTTPMethods&quot;&gt;
+      &lt;class name=&quot;day2.Parameters&quot;&gt;
         &lt;methods&gt;
-          &lt;include name=&quot;updateUser&quot;/&gt;
-          &lt;include name=&quot;deleteUser&quot;/&gt;
-          &lt;include name=&quot;createUser1&quot;/&gt;
+          &lt;include name=&quot;queryParameters&quot;/&gt;
         &lt;/methods&gt;
-      &lt;/class&gt; &lt;!-- day1.HTTPMethods --&gt;
+      &lt;/class&gt; &lt;!-- day2.Parameters --&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Default test --&gt;
 &lt;/suite&gt; &lt;!-- Default suite --&gt;
@@ -215,24 +189,16 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(3);
+data.addRows(1);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'createUser1')
-data.setCell(0, 2, 'day1.HTTPMethods')
-data.setCell(0, 3, 12400);
-data.setCell(1, 0, 1)
-data.setCell(1, 1, 'deleteUser')
-data.setCell(1, 2, 'day1.HTTPMethods')
-data.setCell(1, 3, 2361);
-data.setCell(2, 0, 2)
-data.setCell(2, 1, 'updateUser')
-data.setCell(2, 2, 'day1.HTTPMethods')
-data.setCell(2, 3, 933);
+data.setCell(0, 1, 'queryParameters')
+data.setCell(0, 2, 'day2.Parameters')
+data.setCell(0, 3, 10423);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 15 seconds</span>
+              <span class="suite-total-time">Total running time: 10 seconds</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -247,15 +213,13 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">2 ignored methods</span>
+            <span class="header-content">1 ignored method</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="ignored-class-div">
-              <span class="ignored-class-name">day1.HTTPMethods</span>
+              <span class="ignored-class-name">day2.Parameters</span>
               <div class="ignored-methods-div">
-                <span class="ignored-method-name">createUser</span>
-                <br/>
-                <span class="ignored-method-name">getUser</span>
+                <span class="ignored-method-name">pathParameter</span>
                 <br/>
               </div> <!-- ignored-methods-div -->
             </div> <!-- ignored-class-div -->
@@ -267,18 +231,10 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">day1.HTTPMethods</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">day2.Parameters</div> <!-- chronological-class-name -->
               <div class="test-method">
-                <span class="method-name">createUser1</span>
+                <span class="method-name">queryParameters</span>
                 <span class="method-start">0 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">updateUser</span>
-                <span class="method-start">12419 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">deleteUser</span>
-                <span class="method-start">13361 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

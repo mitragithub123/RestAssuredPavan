@@ -1,0 +1,29 @@
+#Steps to Install and Run JSON Server
+
+1. Install Node.js (if not already installed).
+
+2. Install JSON Server
+
+   Open Command Prompt (CMD).
+   Run the following command to install JSON Server globally:
+
+     npm install -g json-server
+
+3. Open the Project Folder**
+
+   In Eclipse, navigate to the folder containing your JSON file.
+   Right-click the folder and select Show In → Terminal.
+
+4. Start the JSON Server
+
+   In the terminal, execute:
+
+     json-server students.json
+
+5. Access the API
+
+   JSON Server starts on port 3000 by default.
+   The following endpoint will be generated:
+
+   http://localhost:3000/students
+   You can use this URL to perform GET, POST, PUT, PATCH, and DELETE operations on the `students` resource.
