@@ -1,17 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-06-27T14:14:56 IST" name="Default suite" finished-at="2026-06-27T14:15:03 IST" duration-ms="6215">
+  <suite started-at="2026-06-27T17:49:24 IST" name="Default suite" finished-at="2026-06-27T17:49:29 IST" duration-ms="4687">
     <groups>
     </groups>
-    <test started-at="2026-06-27T14:14:56 IST" name="Default test" finished-at="2026-06-27T14:15:03 IST" duration-ms="6215">
-      <class name="day4.HeadersTest">
-        <test-method signature="testHeadersInResponse()[pri:0, instance:day4.HeadersTest@7d8995e]" started-at="2026-06-27T14:14:57 IST" name="testHeadersInResponse" finished-at="2026-06-27T14:15:03 IST" duration-ms="6088" status="PASS">
+    <test started-at="2026-06-27T17:49:24 IST" name="Default test" finished-at="2026-06-27T17:49:29 IST" duration-ms="4687">
+      <class name="day5.ParseComplexJsonResponse">
+        <test-method signature="userDetailsValidation()[pri:1, instance:day5.ParseComplexJsonResponse@293a5bf6]" started-at="2026-06-27T17:49:24 IST" name="userDetailsValidation" finished-at="2026-06-27T17:49:28 IST" duration-ms="3934" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testHeadersInResponse -->
-      </class> <!-- day4.HeadersTest -->
+        </test-method> <!-- userDetailsValidation -->
+        <test-method signature="testRecentOrdersValidation()[pri:2, instance:day5.ParseComplexJsonResponse@293a5bf6]" started-at="2026-06-27T17:49:28 IST" name="testRecentOrdersValidation" finished-at="2026-06-27T17:49:29 IST" duration-ms="433" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testRecentOrdersValidation -->
+        <test-method signature="testPreferencesAndMetadataValidation()[pri:3, instance:day5.ParseComplexJsonResponse@293a5bf6]" started-at="2026-06-27T17:49:29 IST" name="testPreferencesAndMetadataValidation" finished-at="2026-06-27T17:49:29 IST" duration-ms="164" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testPreferencesAndMetadataValidation -->
+      </class> <!-- day5.ParseComplexJsonResponse -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
