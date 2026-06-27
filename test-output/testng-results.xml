@@ -2,16 +2,16 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-06-27T12:16:57 IST" name="Default suite" finished-at="2026-06-27T12:17:01 IST" duration-ms="4139">
+  <suite started-at="2026-06-27T13:57:06 IST" name="Default suite" finished-at="2026-06-27T13:57:13 IST" duration-ms="7010">
     <groups>
     </groups>
-    <test started-at="2026-06-27T12:16:57 IST" name="Default test" finished-at="2026-06-27T12:17:01 IST" duration-ms="4139">
-      <class name="day4.FileUploadAndDownload">
-        <test-method signature="downloadFile()[pri:0, instance:day4.FileUploadAndDownload@42a48628]" started-at="2026-06-27T12:16:57 IST" name="downloadFile" finished-at="2026-06-27T12:17:01 IST" duration-ms="4048" status="PASS">
+    <test started-at="2026-06-27T13:57:06 IST" name="Default test" finished-at="2026-06-27T13:57:13 IST" duration-ms="7010">
+      <class name="day4.CookiesTest">
+        <test-method signature="testCookiesInResponse()[pri:0, instance:day4.CookiesTest@7d8995e]" started-at="2026-06-27T13:57:06 IST" name="testCookiesInResponse" finished-at="2026-06-27T13:57:13 IST" duration-ms="6802" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- downloadFile -->
-      </class> <!-- day4.FileUploadAndDownload -->
+        </test-method> <!-- testCookiesInResponse -->
+      </class> <!-- day4.CookiesTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
