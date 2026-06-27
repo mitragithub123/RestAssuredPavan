@@ -1,0 +1,37 @@
+Authentications
+------
+
+1) Basic
+2) Basic- preemptive
+3) Digest 
+4) Bearer Token
+5) API Key 
+6) OAuth 2.0
+
+
+Oauth2.0
+--------------
+
+1) From the application (Manual process)
+	1) Client ID
+	2) Client Secret
+
+2) Send Post request for getting token
+	POST https://api.imgur.com/oauth2/token
+		ClientID
+		Client secret
+		tokenURL
+		Redirect URL
+		Grant type
+		Authorization code
+
+You will get token once POST request is successful.
+
+3) Use Token to do API call (Get request).
+
+
+
+
+
+
+

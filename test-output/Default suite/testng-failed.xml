@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="day2.Parameters">
+      <class name="day3.AuthenticationTests">
         <methods>
-          <include name="queryParameters"/>
+          <include name="verifyBearerToken"/>
         </methods>
-      </class> <!-- day2.Parameters -->
+      </class> <!-- day3.AuthenticationTests -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
