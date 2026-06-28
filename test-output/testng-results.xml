@@ -1,25 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-06-27T17:49:24 IST" name="Default suite" finished-at="2026-06-27T17:49:29 IST" duration-ms="4687">
+  <suite started-at="2026-06-28T13:13:59 IST" name="Default suite" finished-at="2026-06-28T13:14:05 IST" duration-ms="5563">
     <groups>
     </groups>
-    <test started-at="2026-06-27T17:49:24 IST" name="Default test" finished-at="2026-06-27T17:49:29 IST" duration-ms="4687">
-      <class name="day5.ParseComplexJsonResponse">
-        <test-method signature="userDetailsValidation()[pri:1, instance:day5.ParseComplexJsonResponse@293a5bf6]" started-at="2026-06-27T17:49:24 IST" name="userDetailsValidation" finished-at="2026-06-27T17:49:28 IST" duration-ms="3934" status="PASS">
+    <test started-at="2026-06-28T13:13:59 IST" name="Default test" finished-at="2026-06-28T13:14:05 IST" duration-ms="5563">
+      <class name="day6.Lab_ParsingJSONResponse">
+        <test-method signature="testSimpleJsonParsing()[pri:1, instance:day6.Lab_ParsingJSONResponse@4f83df68]" started-at="2026-06-28T13:14:00 IST" name="testSimpleJsonParsing" finished-at="2026-06-28T13:14:04 IST" duration-ms="4595" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- userDetailsValidation -->
-        <test-method signature="testRecentOrdersValidation()[pri:2, instance:day5.ParseComplexJsonResponse@293a5bf6]" started-at="2026-06-27T17:49:28 IST" name="testRecentOrdersValidation" finished-at="2026-06-27T17:49:29 IST" duration-ms="433" status="PASS">
+        </test-method> <!-- testSimpleJsonParsing -->
+        <test-method signature="testNestedJsonParsing()[pri:2, instance:day6.Lab_ParsingJSONResponse@4f83df68]" started-at="2026-06-28T13:14:04 IST" name="testNestedJsonParsing" finished-at="2026-06-28T13:14:05 IST" duration-ms="673" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testRecentOrdersValidation -->
-        <test-method signature="testPreferencesAndMetadataValidation()[pri:3, instance:day5.ParseComplexJsonResponse@293a5bf6]" started-at="2026-06-27T17:49:29 IST" name="testPreferencesAndMetadataValidation" finished-at="2026-06-27T17:49:29 IST" duration-ms="164" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testPreferencesAndMetadataValidation -->
-      </class> <!-- day5.ParseComplexJsonResponse -->
+        </test-method> <!-- testNestedJsonParsing -->
+      </class> <!-- day6.Lab_ParsingJSONResponse -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
